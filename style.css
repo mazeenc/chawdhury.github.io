@@ -1,0 +1,229 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500&display=swap'); /*Main Font*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap'); /*Secondary Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); /*Third Font*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap'); /*Fourth Font*/
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+:root
+{
+
+    --black: #000;
+    --darkpurple: #11001C;
+    --russianvio: #220135;
+    --blackbean: #290000;
+    --blood: #660000;
+
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header__toggle,
+.header__close
+{
+  display: none;
+}
+
+.hamburger
+{
+    display: none;
+}
+
+.nav .nav-list
+{
+    display: none;
+}
+
+@media screen and (max-width: 430px) {
+    body
+    {
+        background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url('mobilebg.jpg');
+        background-size: cover;
+    }
+
+    .hamburger
+    {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 1px;
+        right: 5px;
+    }
+
+    .hamburger .line
+    {
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin: 6px 0;
+    }
+
+    .nav.active
+    {
+        height: 425px;
+    }
+
+    .nav
+    {
+        height: 0;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #000;
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 10000;
+    }
+
+    .nav .nav-list
+    {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 1;
+        list-style: none;
+    }
+
+    .nav .nav-list .nav-item
+    {
+        padding-bottom: 30px;
+        position: relative;
+        top: -10px;
+        border-radius: 15px;
+    }
+
+    .nav .nav-list .nav-item .nav-link
+    {
+        margin-bottom: 12px;
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+    }
+
+    .navbar
+    {
+        width: 100%;
+        background: #000;
+        height: 40px;
+    }
+
+    .navbar .logo
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar .logo a
+    {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar .logo img
+    {
+        width: 7.5%;
+        position: relative;
+        top: 5px;
+        left: 5px;
+    }
+
+    .navbar .logo p
+    {
+        color: #fff;
+        font-family: 'Comfortaa', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        padding-left: 10px;
+        position: relative;
+        top: 8px;
+    }
+
+    .socials
+    {
+        background: transparent;
+        width: 10%;
+        position: absolute;
+        top: 35%;
+    }
+
+    .socials .social-list
+    {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        position: relative;
+        left: 5px;
+    }
+
+    .socials .social-list .social-item
+    {
+        font-size: 150%;
+        padding-top: 30px;
+    }
+
+    .socials .social-list .social-item .social-link
+    {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .main
+    {
+        color: #fff;
+        width: 100%;
+        height: 95.769vh;
+        text-align: center;
+    }
+
+    .main .main-logo
+    {
+        font-family: 'Comfortaa', sans-serif;
+        position: relative;
+        top: 34%;
+        font-size: 1.75em;
+        color: #fff;
+    }
+
+    .main-text p
+    {
+        position: relative;
+        top: 305px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        width: 300px;
+    }
+
+    .main-button button
+    {
+        position: relative;
+        top: 315px;
+        background: #fff;
+        color: #000;
+        font-size: 1.4em;
+        padding: 10px;
+        padding-inline: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: none;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+
+}
